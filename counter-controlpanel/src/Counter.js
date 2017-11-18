@@ -18,15 +18,6 @@ class Counter extends Component {
     }
   }
 
-  /*
-  getInitialState() {
-    console.log('enter getInitialState');
-  }
-  getDefaultProps() {
-    console.log('enter getDefaultProps');
-  }
-  */
-
   componentWillReceiveProps(nextProps) {
     console.log('enter componentWillReceiveProps ' + this.props.caption)
   }
@@ -40,7 +31,7 @@ class Counter extends Component {
   }
 
   onClickIncrementButton() {
-    this.setState({count: this.state.count + 1});
+    this.setState({count: this.state.count + 1})
   }
 
   onClickDecrementButton() {
