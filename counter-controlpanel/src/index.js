@@ -5,7 +5,7 @@ import ControlPanel from './ControlPanel';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <ControlPanel/>,
+  <ControlPanel />,
   document.getElementById('root')
 );
 registerServiceWorker();

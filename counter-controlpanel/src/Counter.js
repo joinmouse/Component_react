@@ -5,19 +5,16 @@ const buttonStyle = {
 };
 
 class Counter extends Component {
-
   constructor(props) {
-    console.log('enter constructor: ' + props.caption);
     super(props);
-
     this.onClickIncrementButton = this.onClickIncrementButton.bind(this);
     this.onClickDecrementButton = this.onClickDecrementButton.bind(this);
-
     this.state = {
       count: props.initValue
     }
   }
 
+/*
   componentWillReceiveProps(nextProps) {
     console.log('enter componentWillReceiveProps ' + this.props.caption)
   }
@@ -29,6 +26,7 @@ class Counter extends Component {
   componentDidMount() {
     console.log('enter componentDidMount ' + this.props.caption);
   }
+*/
 
   onClickIncrementButton() {
     this.setState({count: this.state.count + 1})
@@ -38,10 +36,10 @@ class Counter extends Component {
     this.setState({count: this.state.count - 1});
   }
 
+  /*
   shouldComponentUpdate(nextProps, nextState) {
-    return (nextProps.caption !== this.props.caption) ||
-           (nextState.count !== this.state.count);
-  }
+    return (nextProps.caption !== this.props.caption) || (nextState.count !== this.state.count);
+  }*/
 
   render() {
     console.log('enter render ' + this.props.caption);
