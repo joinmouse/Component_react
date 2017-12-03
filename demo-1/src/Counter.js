@@ -7,6 +7,9 @@ const buttonStyle = {
 class Counter extends Component {
   constructor(props) {
     super(props);
+
+    //通过bind方法让当前实例中的onClickIncrementButton、
+    //onClickDecrementButton函数被调用的时候，this始终指向当前实例
     this.onClickIncrementButton = this.onClickIncrementButton.bind(this);
     this.onClickDecrementButton = this.onClickDecrementButton.bind(this);
     this.state = {
